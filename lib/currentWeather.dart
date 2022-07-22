@@ -277,7 +277,7 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
         margin: const EdgeInsets.all(15.0),
         height: 160.0,
         decoration: BoxDecoration(
-            color: Colors.indigoAccent,
+            color: Colors.red,
             borderRadius: BorderRadius.all(Radius.circular(20))),
       ),
       ClipPath(
@@ -487,7 +487,7 @@ class Clipper extends CustomClipper<Path> {
 Future getCurrentWeather(Location location) async {
   Weather weather;
   String city = location.city;
-  String apiKey = "206e59a88ba0a8f51d9cce62450d6f4c";
+  String apiKey = "657ae8e6b0f5ce64f68ed84dc9ecfc21";
   var url =
       "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric";
 
@@ -502,7 +502,7 @@ Future getCurrentWeather(Location location) async {
 
 Future getForecast(Location location) async {
   Forecast forecast;
-  String apiKey = "206e59a88ba0a8f51d9cce62450d6f4c";
+  String apiKey = "657ae8e6b0f5ce64f68ed84dc9ecfc21";
   String lat = location.lat;
   String lon = location.lon;
   var url =

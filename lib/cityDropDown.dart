@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weather/models/forcast.dart';
 import 'package:weather/models/location.dart';
 import 'package:weather/models/weather.dart';
 import 'package:http/http.dart' as http;
